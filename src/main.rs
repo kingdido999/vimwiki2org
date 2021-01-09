@@ -45,7 +45,7 @@ fn main() {
             println!("Failed: {}", dest_path_str);
             num_failed += 1;
 
-            println!("{:?}", res.err().unwrap());
+            eprintln!("{:?}", res.err().unwrap());
         }
     }
 
